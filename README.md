@@ -46,7 +46,7 @@ Used for this Web Applicatoin to deploy;
 # Installation:
 
 1. Clone the repo:
- ```ssh
+ ```sh
     git clone https://github.com/nursn/Automated-Deployment-Web-Application-in-AWS.git
  ```
 
