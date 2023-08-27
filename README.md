@@ -63,10 +63,16 @@ Hosting this application involves three steps;
 
 1. Terminal>: cd into infrastructure directory of the project.
 2. Run the following commands in order;
-    Terminal>: 
-    * terraform init
-    * terraform plan
-    * terraform apply
+    Terminal>:
+    ```sh
+    terraform init
+    ```
+    ```sh
+    terraform plan
+    ```
+    ```sh
+    terraform apply
+    ```
 
 These will provision the required infrastructure.
 
@@ -78,7 +84,9 @@ The next step is to install the required softwares in the EC2 instance and deplo
 1. Open the inventory.yml file under ansible directory and replace 0.0.0.0 with the public IP of your ec2.
 2. Replace the contents of the ./ansible/secrets/ssh.private with your private key. This is the private key corresponding to the public key used in Part 1 while provisioning the infrastructure using terraform.
 3. Run the ansible playbook using below command;
-    Terminal>:  ansible-playbook -i inventory.yml application.yml
+   ```sh
+   ansible-playbook -i inventory.yml application.yml
+   ```
 
 # Part 3
 
