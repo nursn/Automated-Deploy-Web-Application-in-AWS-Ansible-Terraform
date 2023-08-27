@@ -83,5 +83,6 @@ The next step is to install the required softwares in the EC2 instance and deplo
 # Part 3
 
 Run the below command to tear down the application;
-
+```sh
   terrafrom destroy
+```
