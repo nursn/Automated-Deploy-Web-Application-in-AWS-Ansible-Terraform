@@ -45,10 +45,11 @@ Used for this Web Applicatoin to deploy;
 
 # Installation:
 
-1. Clone the repo:
-    '''sh
+1. Clone the repo
+ ```sh
     git clone https://github.com/nursn/Automated-Deployment-Web-Application-in-AWS.git
-    '''
+ ```
+
 2. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 3. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
