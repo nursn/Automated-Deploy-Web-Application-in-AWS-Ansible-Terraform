@@ -45,7 +45,7 @@ Used for this Web Applicatoin to deploy;
 
 # Installation:
 
-1. Clone the repo: https://github.com/nursn/Automated-Deployment-Web-Application-in-AWS.git
+1. Clone the repo: git clone https://github.com/nursn/Automated-Deployment-Web-Application-in-AWS.git
 2. [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 3. [Install Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 
@@ -59,10 +59,10 @@ Hosting this application involves three steps;
 
 1. Terminal>: cd into infrastructure directory of the project.
 2. Run the following commands in order;
-     Terminal> 
-        terraform init
-        terraform plan
-        terraform apply
+    Terminal>: 
+    * terraform init
+    * terraform plan
+    * terraform apply
 
 These will provision the required infrastructure.
 
