@@ -1,0 +1,8 @@
+all:
+  hosts:
+    # Public IPv4 address of deployed instance by terraform. Replace it with your IPv4.
+    0.0.0.0:
+      ansible_ssh_extra_args: -o StrictHostKeyChecking=no
+      #  Path of the user key and user name of AWS account. Replace these with your key and user name.
+      ansible_ssh_private_key_file: ./secrets/user-key.pem
+      ansible_user: terraform-user 
