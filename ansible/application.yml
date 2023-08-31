@@ -55,14 +55,14 @@
 
     - name: Creates directory
       file: 
-        path: "/var/www/app"    # creating this directory where placing the application.
+        path: "/var/www/app"    # creat this directory where placing the application.
         state: directory
 
     - name: make the build package
-      local_action: shell tar -c -z -f app.zip -C ./files/php  # creting zip file out of our Applicaton file. 
+      local_action: shell tar -c -z -f app.zip -C ./files/php  # creting zip file out of our Application file. 
       become: no
 
-    # and coping that zip file over ec2 instance then unpack that application ziped package to this directory (/var/www/app) 
+    # and coping that zip file over the ec2 instance then unpack that application zipped package to this directory (/var/www/app) 
     - name: Copy build package
       copy:
         src: "app.zip"
@@ -87,7 +87,7 @@
       service: name=nginx enabled=yes
       become: yes
     
-    # finaly, we start the nginx.
+    # Finally, we start the nginx.
     - name: restart nginx
       service:
         name: nginx
