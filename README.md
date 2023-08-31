@@ -1,4 +1,4 @@
-# Deploy Web Applicatoin in AWS:-
+# Automated Web Application deployment in AWS using Ansible and Terraform
 
 <!-- TABLE OF CONTENTS: -->
 <details open="open">
